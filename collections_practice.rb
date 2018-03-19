@@ -38,5 +38,5 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.reject{|word| word == array[1]}.collect{|word| word + "s"}
+  array.each_with_index.collect{|word, index| 1 == index ? word: word + "s"}
 end
