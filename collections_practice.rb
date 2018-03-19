@@ -24,5 +24,5 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-
+  array.each{|word| new_array << word.gsub(word[2],"$")}
 end
